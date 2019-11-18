@@ -14,7 +14,7 @@ note: I plan on making the setup process much simpler (.exe file that generates 
 
 1. Place this project folder in the same folder as your sketch and destination folder location as demonstrated below  
 -|-Cloner  
- |-ProcessingSketch  
- |-DestinationFolder  
+   |-ProcessingSketch  
+   |-DestinationFolder  
 2. Open FileAtoB and add your processing sketch folder name on line 1, your destination folder name on line 2, and the file extension to copy (.pde), note that this will work with any extension type but only officially supports .pde.
 3. Make sure you have processing added to your path variable so that you can compile from .bat
