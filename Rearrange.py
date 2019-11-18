@@ -10,8 +10,8 @@ fileType = None
 f= open("FileAtoB.txt","r")
 if  f.mode == 'r':
     contents = f.readlines()
-    A = contents[0]
-    B = contents[1]
+    A = '../' + contents[0]
+    B = '../' + contents[1]
     fileType = contents[2]
 f.close()
 
@@ -55,39 +55,3 @@ for fileB in result:
     os.link(srcPath,dst)
 
 print("Copied " + str(totalFiles) + " files from B -> A")
-
-
-
-
-'''
-txtfilesA = []
-for file in glob.glob(path + '/A/*.txt'):
-    txtfilesA.append(file)
-
-txtfilesB = []
-for file in glob.glob(path + "/B/**/*.txt",recursive=True):
-    txtfilesB.append(file)
-
-result = set(os.path.basename(txtfilesA)) - set(os.path.basename(txtfilesB))
-for fileA in result:
-    print("no files in B, linking all!")
-    src = path + '/A/' + fileA
-    dst = path + '/B/' + fileA
-    os.link(src,dst)
-
-result = set(os.path.basename(txtfilesB)) - set(os.path.basename(txtfilesA))
-for fileB in result:
-    dst = path + "\\A\\" + fileB
-    srcPath = None
-    for fileB2 in txtfilesB:
-        srcPath = fileB2 if os.path.basename(fileB2) == fileB else srcPath
-    os.link(srcPath,dst)
-'''
-
-
-
-
-    
-
-
-            
