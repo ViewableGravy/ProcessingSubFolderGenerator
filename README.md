@@ -12,7 +12,7 @@ This project takes a processing sketch folder and places hard copies of each fil
 How to setup:
 note: I plan on making the setup process much simpler (.exe file that generates everything)
 
-1. Place this project folder in the same folder as your sketch and destination folder location as demonstrated below
+1. Place this project folder in the same folder as your sketch and destination folder location as demonstrated below  
 -|-Cloner  
  |-ProcessingSketch  
  |-DestinationFolder  
